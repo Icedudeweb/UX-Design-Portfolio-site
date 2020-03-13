@@ -39,7 +39,7 @@ Primary use: MultiPurpose Template
         max-width: 540px;
     }
     .hs-line-1 {
-        letter-spacing: 40px;
+        letter-spacing: 3px;
     }
     .hs-line-2{
         font-size: 68px;
@@ -106,7 +106,7 @@ Primary use: MultiPurpose Template
     }
     
     .hs-line-1 {
-        letter-spacing: 30px;
+        letter-spacing: 3px;
     }
     .hs-line-2{
         font-size: 60px;
@@ -117,7 +117,7 @@ Primary use: MultiPurpose Template
     } 
     .hs-line-10 {
         padding: 10px 14px;
-        letter-spacing: 1px;
+        letter-spacing: 3px;
     }
     .hs-line-10 > span {
         margin: 0 1px;
@@ -162,7 +162,7 @@ Primary use: MultiPurpose Template
 @media only screen and (max-width: 992px) {
     
     .hs-line-1 {
-        letter-spacing: 23px;
+        letter-spacing: 3px;
     }
     .hs-line-13 {
         letter-spacing: 0.17em;
@@ -382,7 +382,7 @@ Primary use: MultiPurpose Template
     .hs-line-10 {
         padding: 5px 8px;
         font-size: 11px;
-        letter-spacing: 1px;
+        letter-spacing: 3px;
     }
     .hs-line-10 > span {
         margin: 0;
@@ -431,7 +431,7 @@ Primary use: MultiPurpose Template
     
     .wide-heading {
         font-size: 32px;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
     }
     
     .works-filter a{
@@ -597,8 +597,7 @@ Primary use: MultiPurpose Template
         height: 38px;
     }
     .hs-line-1 {
-        font-size: 20px;
-        letter-spacing: 18px;
+        font-size: 20px;        
     }
     .hs-line-2{
         font-size: 28px;
@@ -677,7 +676,7 @@ Primary use: MultiPurpose Template
     .split-section-headings .section-title,
     .wide-heading {
         font-size: 24px;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
     }    
     .section-heading,
     .sub-heading{

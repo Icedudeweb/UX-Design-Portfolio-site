@@ -835,10 +835,10 @@ a.btn-mod:focus{
     vertical-align: middle;
     font-size: 11px;
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 1px;
-    color: #777;
-    border: 1px solid rgba(0,0,0, .1);
+    color: #000000;
+    border: 1px solid rgba(0,0,0, .6);
     padding-left: 7px;
     padding-right: 7px;
     
@@ -943,10 +943,10 @@ a.btn-mod:focus{
 .form textarea{
     font-size: 12px;
     font-weight: 400;
-    text-transform: uppercase !important;
+    text-transform: none !important;
     letter-spacing: 1px;
     color: #777;
-    border-color: rgba(0,0,0, .1);
+    border-color: rgba(0,0,0, .6);
     outline: none;
     
     -webkit-box-shadow: none;
@@ -992,7 +992,7 @@ a.btn-mod:focus{
 
 .form-tip{
     font-size: 11px;
-    color: #aaa;
+    color: #000000;
 }
 .form-tip .fa{
     font-size: 12px;
@@ -3129,7 +3129,6 @@ a.logo:hover{
     margin-top: -70px;
 }
 .alt-features-item{
-    margin-left: 3rem;
     margin-top: 70px;
 }
 .alt-features-icon{
