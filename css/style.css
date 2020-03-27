@@ -366,7 +366,7 @@ img:not([draggable]), embed, object, video{
    ============================== */
 
 body{
-    color: #111;
+    color: #000000; /* ======formerly #111===== */
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;    
@@ -453,7 +453,7 @@ hr.black{
 }
 .font-alt{
     font-family: 'Source Sans Pro', sans-serif;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 0.05em;
 }
 .serif{
@@ -1325,7 +1325,7 @@ a.bg-video-button-muted{
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.1em;
     line-height: 1.8;
     opacity: .9;
 }
@@ -1548,10 +1548,10 @@ a.logo:hover{
 .inner-nav ul{
     float: right;
     margin: auto;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: none;
     text-align: center;
     line-height: 1.3;
 }
@@ -1561,7 +1561,7 @@ a.logo:hover{
     position: relative;
 }
 .inner-nav ul li a{
-    color: #777;
+    color: #000000; /* ======formerly #777===== */
     letter-spacing: 2px;
     display: inline-block;
     -moz-box-sizing: border-box;
@@ -1946,6 +1946,62 @@ a.logo:hover{
     border: 1px solid rgba(255,255,255, .2);
 }
 .main-nav.dark .mn-soc-link:hover{
+    border: 1px solid rgba(255,255,255, .3);
+}
+
+/*
+ * Light panel style
+ */
+
+.main-nav.light{
+    background-color: rgba(255,255,255,1);
+    
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow:  none;
+}
+.main-nav.light .inner-nav ul > li > a{
+    color: rgba(128,128,128,1);
+}
+.main-nav.light .inner-nav ul > li > a:hover,
+.main-nav.light .inner-nav ul > li > a:focus,
+.main-nav.light .inner-nav ul > li > a:active{
+    color: #ed2424;
+}
+
+.main-nav.light .mobile-nav{
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(255,255,255, .9);
+}
+.main-nav.light .mobile-nav:hover,
+.main-nav.light .mobile-nav.active{
+    color: #ed2424;
+}
+
+.main-nav.mobile-on.light .inner-nav{
+    border-top: 1px solid rgba(100,100,100, .4);
+}
+
+.main-nav.light .logo,
+.main-nav.light a.logo:hover{
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255,255,255, .9);
+}
+
+.main-nav.light .mn-sub{    
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow:  none;
+}
+
+.main-nav.light .mn-soc-link{
+    border: 1px solid rgba(255,255,255, .2);
+}
+.main-nav.light .mn-soc-link:hover{
     border: 1px solid rgba(255,255,255, .3);
 }
 
@@ -2387,18 +2443,19 @@ a.logo:hover{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     
-    padding: 140px 0;
+    padding: 125px 0; /* ======formerly 140px===== */
 }
 .small-section{
+    margin-bottom: 120px;
     padding: 70px 0;
 }
 .small-title{
     padding: 0;
     margin: 0 0 30px 0;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 18px;
     font-weight: 300;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.05em;
 }
 .section-icon{
     margin-bottom: 7px;
@@ -2502,13 +2559,13 @@ a.logo:hover{
 .bg-color-alfa-70 .text,
 .bg-color-alfa-90 .text,
 .bg-color-alfa .text,
-.bg-color .section-text,
-.bg-color-lighter .section-text,
-.bg-color-alfa-30 .section-text,
-.bg-color-alfa-50 .section-text,
-.bg-color-alfa-70 .section-text,
-.bg-color-alfa-90 .section-text,
-.bg-color-alfa .section-text{
+.bg-color .section-text-2,
+.bg-color-lighter .section-text-2,
+.bg-color-alfa-30 .section-text-2,
+.bg-color-alfa-50 .section-text-2,
+.bg-color-alfa-70 .section-text-2,
+.bg-color-alfa-90 .section-text-2,
+.bg-color-alfa .section-text-2{
     color: rgba(255,255,255, .75);
 }
 
@@ -2697,11 +2754,11 @@ a.logo:hover{
 
 .section-title {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 22px; /* ======formerly 18px===== */
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: none;
     text-align: center;
-    letter-spacing: 0.1em;
+    letter-spacing: 0em;
     line-height: 1.4;
 }
 .section-more{
@@ -2743,11 +2800,22 @@ a.logo:hover{
     background: #111;
 }
 .section-text{
-    font-size: 16px;
+    font-size: 20px; /* ======formerly 16px===== */
+    font-weight: 300;
+    line-height: 1.7;
+    width: 75%; /* ======formerly this line didn't exist at all===== */
+}
+@media only screen and (max-width: 1024px) {
+    .section-text{
+        margin-left: 5rem;
+    }
+}
+.section-text-2{
+    font-size: 20px; /* ======formerly 16px===== */
     font-weight: 300;
     line-height: 1.7;
 }
-.section-text blockquote{
+.section-text-2 blockquote{
     margin-top: -5px;
 }
 .section-bot-image{
@@ -2764,11 +2832,11 @@ a.logo:hover{
 
 .mod-breadcrumbs{
     margin-top: -5px;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 400;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.1em;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: none;
     
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
@@ -3129,7 +3197,7 @@ a.logo:hover{
     margin-top: -70px;
 }
 .alt-features-item{
-    margin-top: 70px;
+    margin-top: 20px;
 }
 .alt-features-icon{
     padding-top: 10px;
@@ -3148,9 +3216,17 @@ a.logo:hover{
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
+.alt-features-title-2{
+    margin-bottom: 21px;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: none;
+}
 .alt-features-descr {
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.86;
     margin-right: 4rem;
@@ -4265,7 +4341,7 @@ a.link-to-top{
     width: 100%;
 }
 .blog-item-title{
-    margin: 0 0 .5em 0;
+    margin: 15rem 0 .5em 0;
     padding: 0;
     font-size: 24px;
     font-weight: 400;
@@ -5094,14 +5170,14 @@ section:hover .small-item-carousel .owl-next{
 
 .tpl-tabs{
     border-color: #e5e5e5;
-    font-size: 12px;
+    font-size: 18px; /* ======formerly 12px===== */
     font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;    
+    text-transform: none;
+    letter-spacing: 0px;    
 }
 .tpl-tabs > li > a{
     text-decoration: none;
-    color: #777;
+    color: #7C7C7C;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -5114,7 +5190,7 @@ section:hover .small-item-carousel .owl-next{
 }
 .tpl-tabs-cont{
     padding: 30px 0;
-    color: #777;
+    color: #000;
     line-height: 1.8;
 }
 

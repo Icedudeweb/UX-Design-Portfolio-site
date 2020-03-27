@@ -132,6 +132,25 @@ Primary use: MultiPurpose Template
         padding: 120px 0;
         
     }
+    .page-section-2{
+        padding: 90px 0;
+        
+    }
+    .page-section-3{
+        padding: 5px 0;
+        
+    }
+    .page-section-4{
+        padding: 0;        
+    }
+    .page-section-5{
+        padding-top: 100px;
+    }
+    @media only screen and (max-width: 1042px) {
+        .page-section-2{
+            padding: 2rem;
+        }
+    }    
     .page-section, .home-section, .small-section{
         background-attachment: scroll;
     }
