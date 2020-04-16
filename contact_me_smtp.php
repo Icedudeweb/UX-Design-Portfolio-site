@@ -4,9 +4,9 @@ if($_POST)
     $to_Email       = "william.barkhurst@g.austincc.edu"; // Replace with recipient email address
 	$subject        = 'A message from your portfolio site! '.$_SERVER['SERVER_NAME']; //Subject line for emails
     
-    $host           = "smtp.gmail.com"; // Your SMTP server. For example, smtp.mail.yahoo.com
-    $username       = "william.barkhurst@g.austincc.edu"; //For example, your.email@yahoo.com
-    $password       = "op943nkj"; // Your password
+    $host           = "github.com"; // Your SMTP server. For example, smtp.mail.yahoo.com
+    $username       = "icedudeweb"; //For example, your.email@yahoo.com
+    $password       = "gvs564gr"; // Your password
     $SMTPSecure     = "ssl"; // For example, ssl
     $port           = 465; // For example, 465
     
